@@ -123,3 +123,16 @@ a{
 #actualPic{
 	width:200px;
 }
+
+#errorBox{
+	display:none;
+
+}
+
+.colorVar{
+	background-color:blue;
+}
+
+.colorVar.alt{
+	background-color:red;
+}
