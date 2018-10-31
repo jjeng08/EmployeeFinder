@@ -7,37 +7,45 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="./js/survey.js"></script>
+	<link rel="stylesheet" href="./style.css">
 	<title>Document</title>
 </head>
 
 <body>
+	<div class="page">
+		<div id="surveyBox">
+			<h4>Name</h4>
+			<input type="text" id="nameInput">
+			<h4>Photo URL</h4>
+			<input type="text" id="picInput">
 
-	<h4>Name</h4>
-	<input type="text" id="nameInput">
+			<div class="questionBox">Question 1: [PLACEHOLDER].</div>
+			<div class="radioBox">
+				<label><input type="radio" name="q1" value=1>1 (Strongly Disagree)</label>
+				<label><input type="radio" name="q1" value=2>2</label>
+				<label><input type="radio" name="q1" value=3>3 (Neutral)</label>
+				<label><input type="radio" name="q1" value=4>4</label>
+				<label><input type="radio" name="q1" value=5>5 (Strongly Agree)</label>
 
-	<h4>Question 1: [PLACEHOLDER].</h4>
-	<p>
-		<label><input type="radio" name="q1" value=1>Strongly Disagree</label>
-		<label><input type="radio" name="q1" value=2>Disagree</label>
-		<label><input type="radio" name="q1" value=3>Neutral</label>
-		<label><input type="radio" name="q1" value=4>Agree</label>
-		<label><input type="radio" name="q1" value=5>Strongly Agree</label>
+			</div>
 
-	</p>
+			<h4>Question 2: [PLACEHOLDER].</h4>
+			<p>
+				<label><input type="radio" name="q2" value=1>Strongly Disagree</label>
+				<label><input type="radio" name="q2" value=2>Disagree</label>
+				<label><input type="radio" name="q2" value=3>Neutral</label>
+				<label><input type="radio" name="q2" value=4>Agree</label>
+				<label><input type="radio" name="q2" value=5>Strongly Agree</label>
+			</p>
+			<input id="submit" type="button" value="Submit">
 
-	<h4>Question 2: [PLACEHOLDER].</h4>
-	<p>
-			<label><input type="radio" name="q2" value=1>Strongly Disagree</label>
-			<label><input type="radio" name="q2" value=2>Disagree</label>
-			<label><input type="radio" name="q2" value=3>Neutral</label>
-			<label><input type="radio" name="q2" value=4>Agree</label>
-			<label><input type="radio" name="q2" value=5>Strongly Agree</label>
-	</p>
-	<input id="submit" type="button" value="Submit">
+			<div id="results">
+				<div id="partnerName"></div>
+				<div id="partnerPic"></div>
+			</div>
 
-	<div id=results></div>
-
-
+		</div>
+	</div>
 </body>
 
 </html>

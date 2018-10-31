@@ -14,20 +14,19 @@ $(function () {
 
 		const newEmployee = {
 			employeeName: $('#nameInput').val().trim(),
+			employeePic: $('#picInput').val().trim(),
 			scores: answers
 		}
 
-		const validation1=newEmployee.scores;
-		const validation2=newEmployee.employeeName;
+		const validation1 = newEmployee.scores;
+		const validation2 = newEmployee.employeeName;
+		const validation3 = newEmployee.employeePic;
 
-		if(validation1.includes(NaN) || validation2==="") {
+		validation1
+
+		if (validation1.includes(NaN) || validation2 === "" || validation3 === "") {
 			console.log("Error: please fill out all answers")
-		} else{
-		$.ajax({
-			method: 'POST',
-			url: '/api/employees',
-			data: newEmployee
-		}).then(
+		} else {
 			$.ajax({
 				method: 'GET',
 				url: '/api/employees',
@@ -48,9 +47,25 @@ $(function () {
 				const smallestDiff = Math.min(...absValArray);
 				const location = absValArray.indexOf(smallestDiff);
 				const match = data[location];
-				console.log(match);
-			})
-		)
+
+				console.log(match.employeeName);
+
+				const partnerName = $('#partnerName');
+				const partnerPic = $('#partnerPic');
+
+				partnerName.empty();
+				partnerPic.empty();
+
+				partnerName.append(match.employeeName);
+				partnerPic.append(`<img id="actualPic" src ="${match.employeePic}">`)
+				console.log(match.employeePic);
+			}).then(
+				$.ajax({
+					method: 'POST',
+					url: '/api/employees',
+					data: newEmployee
+				})
+			)
+		}
 	}
-	}
-});
+})

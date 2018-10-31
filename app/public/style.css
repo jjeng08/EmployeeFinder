@@ -16,7 +16,7 @@ html, body{
 }
 
 /*HOME PAGE*/
-#homeBox{
+#homeBox, #surveyBox{
 	display:flex;
 	align-items:center;
 	flex-direction:column;
@@ -77,7 +77,7 @@ html, body{
 	text-align:center;
 	text-align:middle;
 	transition: all 0.3s ease-in-out;
-	margin-top:0px;
+	margin-top:60px;
 	margin-bottom: 20px;
 }
 
@@ -106,3 +106,20 @@ a{
 }
 
 /*SURVEY PAGE*/
+.radioBox{
+	display:flex;
+	justify-content:space-around;
+	background-color:whitesmoke;
+	border-color:rgb(41, 53, 53);
+	border-style:solid;
+	border-width:2px;
+	border-radius:10px;
+	width:85%;
+	font-size:18px;
+	line-height:36px;
+
+}
+
+#actualPic{
+	width:200px;
+}
