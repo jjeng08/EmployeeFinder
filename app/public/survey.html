@@ -14,12 +14,15 @@
 <body>
 	<div class="page">
 		<div id="surveyBox">
-			<h4>Name</h4>
-			<input type="text" id="nameInput">
-			<h4>Photo URL</h4>
-			<input type="text" id="picInput">
 
-			<div class="questionBox">Question 1: [PLACEHOLDER].</div>
+			<div class="inputLabel">Enter Name</div>
+			<input class="inputBar" type="text" id="nameInput">
+			<div class="inputLabel">Enter URL to a Professional Photograph</div>
+			<input class="inputBar" type="text" id="picInput">
+
+			<div class="questionBox">
+				<div class="question">Question 1: SURPRISE!</div>
+			</div>
 			<div class="radioBox">
 				<label><input type="radio" name="q1" value=1>1 (Strongly Disagree)</label>
 				<label><input type="radio" name="q1" value=2>2</label>
@@ -27,22 +30,33 @@
 				<label><input type="radio" name="q1" value=4>4</label>
 				<label><input type="radio" name="q1" value=5>5 (Strongly Agree)</label>
 			</div>
-
-			<h4>Question 2: [PLACEHOLDER].</h4>
+			<div class="questionBox">
+					<div class="question">Question 2: Are you fighting to free the holy land from the Saracens?</div>
+				</div>
 			<div class="radioBox">
-				<label><input type="radio" name="q2" value=1>Strongly Disagree</label>
-				<label><input type="radio" name="q2" value=2>Disagree</label>
-				<label><input type="radio" name="q2" value=3>Neutral</label>
-				<label><input type="radio" name="q2" value=4>Agree</label>
-				<label><input type="radio" name="q2" value=5>Strongly Agree</label>
+				<label><input type="radio" name="q2" value=1>1 (Strongly Disagree)</label>
+				<label><input type="radio" name="q2" value=2>2</label>
+				<label><input type="radio" name="q2" value=3>3 (Neutral)</label>
+				<label><input type="radio" name="q2" value=4>4</label>
+				<label><input type="radio" name="q2" value=5>5 (Strongly Agree)</label>
 			</div>
-			<input id="submit" type="button" value="Submit">
 
-			<div id="errorBox" class="colorVar">ERROR! ERROR! INCOMPETENCE DETECTED!</div>
+			<div id="errorBox" class="colorVar">ERROR! ERROR! INCOMPETENCE DETECTED! COMPLETE THE FORM AS ANY COMPETENT WOULD!</div>
+			<input id="submitButton" type="button" value="SUBMIT">
 
+
+
+			<div id="myModal" class="modal">
+
+				<div id="modalContent">
+					<span class="close"></span>
+					<div id="partnerName"></div>
+					<div id="partnerPic"></div>
+				</div>
+
+			</div>
 			<div id="results">
-				<div id="partnerName"></div>
-				<div id="partnerPic"></div>
+
 			</div>
 
 		</div>

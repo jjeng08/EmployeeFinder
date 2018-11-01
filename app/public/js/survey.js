@@ -1,5 +1,5 @@
 $(function () {
-	$('#submit').on('click', getResult)
+	$('#submitButton').on('click', getResult)
 	function getResult(event) {
 		event.preventDefault();
 
@@ -34,9 +34,27 @@ $(function () {
 				partnerName.empty();
 				partnerPic.empty();
 
-				partnerName.append(data.employeeName);
-				partnerPic.append(`<img id="actualPic" src ="${data.employeePic}">`)
+				partnerName.append(`<div id="partnerName">Companion: ${data.employeeName} </div>`);
+				partnerPic.append(`<img id="partnerPic" src ="${data.employeePic}">`)
 			})
+
+
+			const modal = document.getElementById('myModal');
+
+			var span = document.getElementsByClassName("close")[0];
+
+			modal.style.display = "block";
+
+			span.onclick = function () {
+				modal.style.display = "none";
+			}
+
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+
 
 		}
 

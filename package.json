@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jjeng08/EmployeeFinder.git"
+    "url": "git+https://github.com/jjeng08/employeeFinder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jjeng08/EmployeeFinder/issues"
+    "url": "https://github.com/jjeng08/employeeFinder/issues"
   },
-  "homepage": "https://github.com/jjeng08/EmployeeFinder#readme"
+  "homepage": "https://github.com/jjeng08/employeeFinder#readme"
 }
