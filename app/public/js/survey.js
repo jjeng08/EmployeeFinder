@@ -3,15 +3,13 @@ $(function () {
 	function getResult(event) {
 		event.preventDefault();
 
-		const answers = [
-			parseInt($("input[name='q1']:checked").val()),
-			parseInt($("input[name='q2']:checked").val())
-		]
-
 		const newEmployee = {
 			employeeName: $('#nameInput').val().trim(),
 			employeePic: $('#picInput').val().trim(),
-			scores: answers
+			scores: [
+				parseInt($("input[name='q1']:checked").val()),
+				parseInt($("input[name='q2']:checked").val())
+			]
 		}
 
 		const validation1 = newEmployee.scores;
