@@ -1,0 +1,138 @@
+html, body{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+.page{
+	display:flex;
+	justify-content: center;
+	background-color: whitesmoke;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+/*HOME PAGE*/
+#homeBox, #surveyBox{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	width:75%;
+	min-height:500px;
+	max-height:800px;
+	background-color:lightgrey;
+	border-radius:10px;
+	border-color:rgb(41, 53, 53);
+	border-style:solid;
+	border-width:2px;
+	margin-top:40px;
+}
+
+#companyName{
+	font-size:36px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:60px;
+	text-align:center;
+}
+#slogan{
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:20px;
+}
+#homeTitle{
+	font-size:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:69px;
+	text-align:center;
+}
+
+#homePic{
+	width:100px;
+}
+
+#homeDescription{
+	margin-top:40px;
+	width:400px;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:justify;
+}
+
+#matchButton{
+	background-color: grey;
+	color:whitesmoke;
+	font-family: Arial;
+	border-color:rgb(41, 53, 53);
+	border-style:solid;
+	border-width:2px;
+	border-radius:5px;
+	height:50px;
+	Width:150px;
+	font-size:36px;
+	line-height:36px;
+	line-height:50px;
+	text-align:center;
+	text-align:middle;
+	transition: all 0.3s ease-in-out;
+	margin-top:60px;
+	margin-bottom: 20px;
+}
+
+#matchButton:hover{
+	cursor:pointer;
+	transform: scale(1.2);
+}
+
+#apiLink{
+	margin-top:auto;
+	margin-bottom:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:rgb(41, 53, 53);
+	transition: all 0.3s ease-in-out;
+}
+
+#apiLink:hover{
+	cursor:pointer;
+	color:whitesmoke;
+	cursor:pointer;
+	transform: scale(1.2);
+}
+
+a{
+	text-decoration:none;
+}
+
+/*SURVEY PAGE*/
+.radioBox{
+	display:flex;
+	justify-content:space-around;
+	background-color:whitesmoke;
+	border-color:rgb(41, 53, 53);
+	border-style:solid;
+	border-width:2px;
+	border-radius:10px;
+	width:85%;
+	font-size:18px;
+	line-height:36px;
+
+}
+
+#actualPic{
+	width:200px;
+}
+
+#errorBox{
+	display:none;
+
+}
+
+.colorVar{
+	background-color:blue;
+}
+
+.colorVar.alt{
+	background-color:red;
+}
