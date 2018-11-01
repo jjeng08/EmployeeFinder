@@ -2,13 +2,10 @@ let employees = require('../data/employees.js');
 
 module.exports = function (app) {
 	app.post('/api/employees', function (req, res) {
-		// find match
-
 		const newEmployee = req.body;
 
 		let absValArray = [];
 		for (let i = 0; i < employees.length; i++) {
-			// let testedEmployee = data[i];
 			let compared = employees[i];
 			let sum = 0;
 			for (let j = 0; j < newEmployee.scores.length; j++) {

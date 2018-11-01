@@ -4,7 +4,7 @@ const path = require ('path');
 const app = express();
 
 //Selects a port.
-const PORT = 8080;
+var PORT = process.env.PORT ||3000;
 
 //Enables all parsing
 app.use(express.urlencoded({ extended: true }));

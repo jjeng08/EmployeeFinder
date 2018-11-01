@@ -8,19 +8,18 @@
     "express": "^4.16.4",
     "path": "^0.12.7"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jjeng08/EmployeeFinder.git"
+    "url": "git+https://github.com/jjeng08/employeeFinder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jjeng08/EmployeeFinder/issues"
+    "url": "https://github.com/jjeng08/employeeFinder/issues"
   },
-  "homepage": "https://github.com/jjeng08/EmployeeFinder#readme"
+  "homepage": "https://github.com/jjeng08/employeeFinder#readme"
 }
