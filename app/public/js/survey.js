@@ -35,7 +35,7 @@ $(function () {
 				partnerPic.empty();
 
 				partnerName.append(`<div id="partnerName">Companion: ${data.employeeName} </div>`);
-				partnerPic.append(`<img id="partnerPic" src ="${data.employeePic}">`)
+				partnerPic.append(`<img id="actualPic" src ="${data.employeePic}">`)
 			})
 
 

@@ -231,7 +231,13 @@ label{
 
 #partnerPic{
 	align-self:center;
+	width:75%;
 }
+
+#actualPic{
+	width:100px;
+}
+
 
 /*MODAL CONTENT*/
 .modal {
