@@ -5,6 +5,7 @@ $(function () {
 
 		const newEmployee = {
 			employeeName: $('#nameInput').val().trim(),
+			employeeBio: "[AN HR-DESIGNATED PERSONALITY WILL BE ASSIGNED SHORTLY]",
 			employeePic: $('#picInput').val().trim(),
 			scores: [
 				parseInt($("input[name='q1']:checked").val()),
@@ -32,10 +33,11 @@ $(function () {
 				const partnerPic = $('#partnerPic');
 
 				partnerName.empty();
+				partnerBio.empty();
 				partnerPic.empty();
 
 				partnerName.append(`<div id="actualName">${data.employeeName} </div>`);
-
+				partnerBio.append(`"${data.employeeBio}"`)
 				partnerPic.append(`<img id="actualPic" src ="${data.employeePic}">`)
 			})
 

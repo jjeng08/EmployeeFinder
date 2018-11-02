@@ -229,7 +229,16 @@ html, body{
 		font-size:30px;
 		margin-bottom: 20px;
 	}
-	
+
+	#partnerBio {
+		align-self:center;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		margin-bottom:30px;
+		font-style:italic;
+		width:60%;
+	}
 	#partnerPic{
 		align-self:center;
 		width:75%;
