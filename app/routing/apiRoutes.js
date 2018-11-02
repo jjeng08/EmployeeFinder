@@ -17,6 +17,7 @@ module.exports = function (app) {
 			}
 			absValArray.push(sum);
 		}
+
 		const smallestDiff = Math.min(...absValArray);
 		const location = absValArray.indexOf(smallestDiff);
 		const match = employees[location];
