@@ -4,7 +4,315 @@ html, body{
 	padding:0;
 	margin:0;
 }
-
+	.page{
+		display:flex;
+		justify-content: center;
+		background-color: whitesmoke;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	
+	/*HOME PAGE*/
+	#homeBox, #surveyBox{
+		display:flex;
+		align-items:center;
+		flex-direction:column;
+		width:75%;
+		height:100%;
+		background-color:lightgrey;
+		border-radius:10px;
+		border-color:rgb(41, 53, 53);
+		border-style:solid;
+		border-width:2px;
+		margin-top:40px;
+		margin-bottom:40px;
+		padding-top:20px;
+	}
+	
+	#companyName{
+		font-size:24px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+	}
+	#slogan{
+		font-size:14px;
+		font-family:Arial, Helvetica, sans-serif;
+		margin-top:10px;
+		text-align:center;
+	}
+	#homeTitle{
+		font-size:40px;
+		font-family:Arial, Helvetica, sans-serif;
+		margin-top:30px;
+		text-align:center;
+	}
+	
+	#homePic{
+		width:50px;
+	}
+	
+	#homeDescription{
+		margin-top:20px;
+		width:75%;
+		font-size:16px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:justify;
+	}
+	
+	#matchButton{
+		background-color: grey;
+		color:whitesmoke;
+		font-family: Arial;
+		border-color:rgb(41, 53, 53);
+		border-style:solid;
+		border-width:2px;
+		border-radius:5px;
+		height:36px;
+		Width:100px;
+		font-size:28px;
+		line-height:28px;
+		line-height:36px;
+		text-align:center;
+		text-align:middle;
+		transition: all 0.3s ease-in-out;
+		margin-top:50px;
+		margin-bottom: 20px;
+	}
+	
+	#matchButton:hover{
+		cursor:pointer;
+		transform: scale(1.2);
+	}
+	
+	#apiLink{
+		margin-top:auto;
+		margin-bottom:10px;
+		font-family:Arial, Helvetica, sans-serif;
+		color:rgb(41, 53, 53);
+		transition: all 0.3s ease-in-out;
+	}
+	
+	#apiLink:hover{
+		cursor:pointer;
+		color:whitesmoke;
+		cursor:pointer;
+		transform: scale(1.2);
+	}
+	
+	a{
+		text-decoration:none;
+	}
+	
+	/*SURVEY PAGE*/
+	.inputLabel{
+		margin-bottom:5px;
+		text-align:center;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:18px;
+		font-weight: bold;
+	}
+	.inputBar {
+		width:400px;
+		height:24px;
+		font-size:16px;
+		line-height:24px;
+		text-align: center;
+		text-align:middle;
+		border-radius:10px;
+		margin-bottom:30px;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	
+	.questionBox{
+		display:flex;
+		background-color:rgb(136, 136, 136);
+		border-color:rgb(41, 53, 53);
+		border-style:solid;
+		border-width:2px;
+		border-radius:10px;
+		width:85%;
+		padding:0px 10px 0px 10px;
+		margin-bottom:5px;
+	}
+	
+	.question{
+		font-family:Arial, Helvetica, sans-serif;
+		color: whitesmoke;
+		font-size:18px;
+		line-height:36px;
+	
+	}
+	
+	.radioBox{
+		display:flex;
+		justify-content:space-around;
+		background-color:whitesmoke;
+		border-color:rgb(41, 53, 53);
+		border-style:solid;
+		border-width:2px;
+		border-radius:10px;
+		width:85%;
+		padding:0px 10px 0px 10px;
+		margin-bottom:30px;
+	}
+	
+	label{
+		font-family:Arial, Helvetica, sans-serif;
+		color: rgb(41, 53, 53);
+		font-size:16px;
+		line-height:36px;
+	}
+	
+	#errorBox{
+		display:none;
+	
+	}
+	
+	.colorVar{
+		display:flex;
+		justify-content:space-around;
+		background-color:whitesmoke;
+		color: rgb(41, 53, 53);
+		border-color:rgb(41, 53, 53);
+		border-style:solid;
+		border-width:2px;
+		border-radius:10px;
+		width:85%;
+		font-size:16px;
+		line-height:36px;
+		margin-bottom:20px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	
+	.colorVar.alt{
+		display:flex;
+		justify-content:space-around;
+		background-color:rgb(136, 136, 136);
+		color:whitesmoke;
+		border-color:rgb(41, 53, 53);
+		border-style:solid;
+		border-width:2px;
+		border-radius:10px;
+		width:85%;
+		font-size:16px;
+		line-height:36px;
+		margin-bottom:20px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	
+	#submitButton{
+		background-color: grey;
+		color:whitesmoke;
+		font-family: Arial;
+		border-color:rgb(41, 53, 53);
+		border-style:solid;
+		border-width:2px;
+		border-radius:5px;
+		height:32px;
+		Width:85px;
+		font-size:18px;
+		line-height:24px;
+		line-height:18px;
+		text-align:center;
+		text-align:middle;
+		transition: all 0.3s ease-in-out;
+		margin-top:50px;
+		margin-bottom: 20px;
+	}
+	
+	#partnerName{
+		align-self:center;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:30px;
+	}
+	
+	#partnerPic{
+		align-self:center;
+	}
+	
+	/*MODAL CONTENT*/
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+	
+	/* Modal Content */
+	#modalContent {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		background-color: #fefefe;
+		margin:auto;
+		padding: 20px;
+		border-width:2px;
+		border-style:solid;
+		border-color: rgb(41, 53, 53);
+		border-radius: 20px;
+		width: 80%;
+	}
+	
+	.close {
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	/*MEDIA QUERIRES*/
+	@media screen and (max-width: 780px) {
+		.radioBox{
+			flex-direction:column;
+			align-items:left;
+			width:200px;
+		}
+	}
+	
+	@media screen and (max-width: 360px) {
+		.radioBox{
+			flex-direction:column;
+			align-items:left;
+			width:90%;
+			padding:0;
+		}
+	
+		.questionBox{
+			width:90%;
+			padding:0;
+		}
+	
+		.question{
+			font-size:12px;
+			line-height:24px;
+			width:100%;
+			margin-left:10px;
+			margin-right:10px;
+		}
+		label{
+			font-size:12px;
+			line-height:24px;
+			width:100%;
+		}
+	}
+=======
 .page{
 	display:flex;
 	justify-content: center;

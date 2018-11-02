@@ -1,18 +1,34 @@
 let matches = [
 	{
-		'employeeName': "Chou",
-		'employeePic': "https://i.pinimg.com/originals/89/94/91/8994916125e642b00e3ac07198baa306.jpg",
+		'employeeName': "Crusader Mike",
+		'employeePic': "https://steamuserimages-a.akamaihd.net/ugc/227822763989333468/DEC128442459B29205F3E01CE2A4B862E975F5D8/",
 		'scores':[
 			1,
-			1
+			5,
+			3,
+			1,
+			5,
+			1,
+			1,
+			5,
+			3,
+			3,
 		]
 	},
 	{
-		'employeeName': "Miki",
-		'employeePic': "https://i.imgur.com/Yutf9ha.jpg",
+		'employeeName': "Rammus",
+		'employeePic': "http://d1mt9jmphk9kik.cloudfront.net/teamdignitas/image1493998695.jpg",
 		'scores':[
-			2,
-			2
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
 		]
 	}
 
